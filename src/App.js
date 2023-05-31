@@ -1,13 +1,30 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Components from './components/Components';
-
+import AccordionParent from './components/Accordion/AccordionParent';
+import Sidebar from './components/Sidebar/Sidebar';
+import {Dashboard,About,Analytics,Comment,Product,ProductList} from './pages'
 
 
 const App = ()=>{
     return(
         <div className='main'>
-            <Components data={data}/>
+            {/* <AccordionParent data={data}/> */}
+            
+            <BrowserRouter>
+                <Sidebar>
+                    <Routes>
+                        <Route path='/' element={ <Dashboard/>}/>
+                        <Route path='/dashboard' element={ <Dashboard/>}/>
+                        <Route path='/about' element={ <About/>}/>
+                        <Route path='/comment' element={ <Comment/>}/>
+                        <Route path='/analytics' element={ <Analytics/>}/>
+                        <Route path='/product' element={ <Product/>}/>
+                        <Route path='/productList' element={ <ProductList/>}/>
+                    </Routes>
+                </Sidebar>
+            </BrowserRouter>
+            
         </div>
     );
 };

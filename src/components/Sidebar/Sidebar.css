@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: rgb(211, 212, 212);
+    height: 100%;
+}
+
+.top_section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.top_section h1 {
+    margin-right :20px;
+}
+
+.top_section .bars {
+    margin-top :10px;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 20px;
+    gap: 15px;
+    align-items: center;
+    transition: all 100s;
+    color: rgb(211, 212, 212);
+    transition: background-color 0.5s;
+}
+
+.link:hover{
+    color: white;
+    background-color: aqua;
+}
+
+
+.active{
+    color: black;
+    background-color: rgb(211, 212, 212);
+}
+.nav-menu{
+    flex-grow: 1;
+    margin-top: 20px;
+}

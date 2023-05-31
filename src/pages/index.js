@@ -1,0 +1,6 @@
+export {default as About} from './About.jsx'
+export {default as Analytics} from './Analytics.jsx'
+export {default as Comment} from './Comment.jsx'
+export {default as Dashboard} from './Dashboard.jsx'
+export {default as Product} from './Product.jsx'
+export {default as ProductList} from './ProductList.jsx'
